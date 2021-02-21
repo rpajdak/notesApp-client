@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import SideBar from "../SideBar/SideBar"
-import GoBackBtn from "../GoBackBtn/GoBackBtn"
 import Header from "../Header/Header"
 import Note from "../Note/Note"
 import "../../css/all-notes.css"
@@ -15,11 +14,9 @@ function AllNotes() {
                 method: 'GET',
                 credentials: 'include',
             });
-
-        console.log(response)
         const notes = await response.json();
         setNotes(notes);
-        
+
     }
 
     useEffect(() => {
@@ -37,7 +34,6 @@ function AllNotes() {
                         <p className="">Note content </p>
                         <p className="">Note created </p>
                     </div>
-
                     <div className="items-list"> {
                         fetchedNotes.map(function (note) {
                             return <Note orderly={n += 0.1} note={note}/>;
