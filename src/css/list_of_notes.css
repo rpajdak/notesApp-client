@@ -1,7 +1,3 @@
-.list-of-notes {
-    background-color: gray;
-}
-
 .single-note {
     display: flex;
     flex-direction: row;

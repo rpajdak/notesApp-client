@@ -9,11 +9,10 @@ function NewNote() {
 
 
     const onSubmit = async (data) => {
+        
         const headers = new Headers();
-        console.log(errors);
         const successMessage = document.getElementById("note-added-message");
-        console.log(data)
-
+        
         headers.append('Content-type', 'application/json');
         const request = new Request('http://localhost:8080/notes',
             {
