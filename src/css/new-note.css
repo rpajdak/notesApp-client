@@ -1,0 +1,45 @@
+.new-note-wrapper {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+}
+
+form,
+.buttons {
+    width: 480px;
+}
+
+.new-note-wrapper button,
+input,
+p {
+    width: 140px;
+    height: 24px;
+    margin: 0 12px 12px 12px;
+    border: none;
+    padding: 0;
+}
+
+#note-added-message {
+    display: none;
+}
+
+.buttons {
+    flex-direction: row;
+}
+
+.side-bar {
+    margin: 0;
+}
+
+.inputs-btns {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-btns form {
+    display: flex;
+    flex-direction: row;
+}

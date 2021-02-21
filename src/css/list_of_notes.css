@@ -1,0 +1,13 @@
+.list-of-notes {
+    background-color: gray;
+}
+
+.single-note {
+    display: flex;
+    flex-direction: row;
+}
+
+.single-note p {
+    width: 180px;
+    margin: 12px;
+}

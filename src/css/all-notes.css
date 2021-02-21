@@ -1,0 +1,17 @@
+.notes-container {
+    display: flex;
+}
+
+.notes-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-headers {
+    display: flex;
+    flex-direction: row;
+}
+
+.note-headers p {
+    width: 180px;
+}
