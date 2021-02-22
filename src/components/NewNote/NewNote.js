@@ -33,12 +33,7 @@ function NewNote() {
             <div className="new-note-wrapper">
                 <div className="side-bar"><SideBar/></div>
                 <div className="inputs-btns">
-                    <div className="buttons">
-                        <button type="submit"
-                                onClick={handleSubmit(onSubmit)}>Add new note!
-                        </button>
-                        <p id="note-added-message">Note has been added.</p>
-                    </div>
+                    
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <div>
@@ -59,7 +54,12 @@ function NewNote() {
 
 
                     </form>
-
+                    <div className="buttons">
+                        <button type="submit"
+                                onClick={handleSubmit(onSubmit)}>Add new note!
+                        </button>
+                        <p id="note-added-message">Note has been added.</p>
+                    </div>
                 </div>
             </div>
         </div>
