@@ -5,3 +5,12 @@ body ul {
 .sideBar-content {
     width: 240px;
 }
+
+a{
+    text-decoration: none;
+}
+
+li{
+    margin-bottom: 12px;
+    color: #fff
+}
