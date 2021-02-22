@@ -1,9 +1,18 @@
 .single-note {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 12px 0;
+    border: 4px solid #fff;
+    height: 60px;
 }
 
 .single-note p {
     width: 180px;
+    margin: 12px;
+}
+
+.single-note button{
     margin: 12px;
 }
