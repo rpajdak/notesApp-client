@@ -33,6 +33,7 @@ function AllNotes() {
                         <p className="">Note title </p>
                         <p className="">Note content </p>
                         <p className="">Note created </p>
+                        <p className="">Note modiefied </p>
                     </div>
                     <div className="items-list"> {
                         fetchedNotes.map(function (note) {
