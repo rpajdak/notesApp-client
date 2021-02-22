@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+#Simple  Notes App written in JavaSpring, React. It uses PostgreSQL database. All notes are stored in database including deleted ones and old version od edited notes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##
+Backend repository 
+https://github.com/rpajdak/notesApp
+##
+Frontend repository
+https://github.com/rpajdak/notesApp-client
 
-## Available Scripts
+#To start this application it is required to have installed React and Java and PostgreSQL database with created table named "notesapp".;
+
+
+##Start Frontend part
 
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+##Start Backend part
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It is recommended to use IntelliJ IDEA to start backend side.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#Database
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tables in database are created automatically by Hibernate framework.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#Curl usage
 
-### `npm run eject`
+To add note with method "POST"
+"http://localhost:3000/notes" 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get note by id with method "GET"
+"http://localhost:3000/notes/id"
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get all note with method "GET"
+"http://localhost:3000/notes" 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To delete note with method "DELETE"
+"http://localhost:3000/notes/id"
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To update note with method "PUT"
+"http://localhost:3000/notes/id"
 
-## Learn More
+To get all deleted notes with method "GET"
+"http://localhost:3000/notes/deleted"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To history of modified note with method "GET"
+"http://localhost:3000/notes/updated/{id}"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+View of section to add new note.
+![New note](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/addnote.png)
 
-### Code Splitting
+View of section of all notes.
+![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/allNotes.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+View of section of all deleted notes.
+![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/allDeleted.png)
 
-### Analyzing the Bundle Size
+When "Delete this note" button is clicked-pop-up shows up.
+![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/deletedNote.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+View of section to edit note.
+![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/editNote.png)
 
-### Making a Progressive Web App
+View of history of edited note.
+![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/historyOfUpdated.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
