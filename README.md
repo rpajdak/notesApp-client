@@ -52,22 +52,29 @@ To history of modified note with method "GET"
 "http://localhost:3000/notes/updated/{id}"
 
 View of section to add new note.
-![New note](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/addnote.png)
+
+![Add note](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/addNote.png)
 
 View of section of all notes.
-![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/allNotes.png)
+
+![All notes](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/allNotesNew.png)
+
+When title of note is clicked the content is shown
+
+![Content shown](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/contentShown.png)
 
 View of section of all deleted notes.
-![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/allDeleted.png)
+
+![Delete note](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/allDeletedNew.png)
 
 When "Delete this note" button is clicked-pop-up shows up.
-![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/deletedNote.png)
+
+![Delete note](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/deleteNote.png)
 
 View of section to edit note.
-![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/editNote.png)
+
+![Edit notes](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/editNote.png)
 
 View of history of edited note.
-![All notes](https://github.com/rpajdak/notesApp/blob/dev/src/main/assets/historyOfUpdated.png)
 
-
- 
+![History of note](https://github.com/rpajdak/notesApp/blob/master/src/main/assets/historyOfUpdated.png)
